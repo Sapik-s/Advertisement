@@ -1,0 +1,93 @@
+@media (max-width: 1080px) {
+    body{
+        position: relative;
+        min-width: 100px;
+        min-height: 100px;
+        
+        .header {
+            width: 100%;
+            // display: none;
+    
+            // .header__wrapper-all
+            &__wrapper-all {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0 96px 0;
+            }
+    
+            // .header__logo
+            &__logo {
+                margin-right: 260px;
+            }
+    
+            // .header__name
+            &__name {
+                flex-direction: row-reverse;
+                margin-right: 235px;
+                color: #9B9B9B;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+    
+            // .header__account
+            &__account {
+                margin-right: 9px;
+            }
+            &__wrapper-burger{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50px;
+                background-color: red;
+            }
+
+        }
+        .container {
+            width: 800px;
+        }
+        .nav {
+            
+            position: absolute;
+            margin-top: 35px;
+            height: 1000px;
+            width: 100%;
+            width: 800px;
+            // background-color: red;
+
+            &__hr{
+                display: block;
+                width: 360px;
+                border: 1px solid #5A5A5A;
+                &:last-child{display: none;}
+            }
+
+            // .nav__list
+            &__list {
+                flex-direction: column;
+                align-items: start;
+                li{
+                    margin: 0;
+                    padding: 15px 0;
+                    a{color: #5A5A5A;}
+                    img{display: none;}
+                    &:last-child{display: none;}
+                }
+            }
+
+            &__cross{
+                display: block;
+                position: absolute;
+                top: -65px;
+                right: -10px;
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+
+        section.main{
+            z-index: -99;
+        }
+    }
+}

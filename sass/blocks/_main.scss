@@ -1,0 +1,124 @@
+button{
+    border: none;
+}
+li {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.header {
+    height: 50px;
+    z-index: 2;
+    
+    &__wrapper-all{
+        padding: 12.85px 0px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .header__wrapper-account
+    &__wrapper-account {
+        display: flex;
+        // position: absolute;
+        // right: 0;
+        align-items: start;
+        // top: 25px;
+        // transform: translateY(-50%);
+        &:hover{
+            color: #009FFF;
+        }
+    }
+
+    //Убратьposition absolute
+    // .header__name
+    &__name {
+        display: flex;
+        margin-left: 1100px;
+        align-items: center;
+        cursor: pointer;
+        img{
+            padding-left: 9px;
+        }
+    }
+
+    &__wrapper-burger{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo{
+        position: absolute;
+        top: 25px;
+        transform: translateY(-50%);
+        left: 0;
+    }
+}
+
+.nav {
+    &__sub-list {
+        display: none;
+        position: absolute;
+        top: 20px;
+        left: -2px;
+        width: 200px;
+        height: 145px;
+        padding-top: 16px;
+        background-color: #FFFFFF;
+        li{
+            padding: 5px 0 5px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__hr{
+        display: none;
+    }
+
+    // .nav__list
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0 17.5px 0 17.5px;
+            a{
+                &:hover{
+                    color: #009FFF;
+                }
+            }
+            &:nth-child(2){
+                position: relative;
+                &:hover .nav__sub-list{
+                    display: block;
+                }
+            }
+        }
+
+    }
+
+    &__cross{
+        display: none;
+    }
+}
+
+.main {
+    height: 2000px;
+    background-color: #E7F6FF;
+}
