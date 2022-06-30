@@ -13,7 +13,22 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper-all">
-                <div class="header__wrapper">
+                <div class="header__menu">
+                    <div class="header__wrapper">
+                        <a class="header__logo" href="#"><img src="icons/svg/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="nav__cross">
+                        <div id="webapp_cover">
+                            <div id="menu_button">
+                              <input type="checkbox" id="menu_checkbox">
+                              <label for="menu_checkbox" id="menu_label">
+                                <div id="menu_text_bar"></div>
+                              </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="menu__hidden" class="header__wrapper">
                     <a class="header__logo" href="#"><img src="icons/svg/logo.svg" alt="logo"></a>
                 </div>
                 <div class="header__wrapper-burger">
@@ -22,12 +37,12 @@
                             <li><a href="#">Главная</a></li>
                             <hr class="nav__hr">
 
-                            <li><a href="#">Проекты <img src="icons/svg/arrow-down.svg" alt="arrow-down">
+                            <li class="nav__item"><a href="#">Проекты <img src="icons/svg/arrow-down.svg" alt="arrow-down">
                                 <ul class="nav__sub-list">
                                     <li><a href="#">МЛМ проекты</a></li>
                                     <li><a href="#">Инвестиции</a></li>
                                     <li><a href="#">Социальные сети</a></li>
-                                    <li><a href="#">Социальные сети</a></li>
+                                    <li><a href="#">Криптовалюта</a></li>
                                     <li><a href="#">Хостинги</a></li>
                                 </ul>
                             </a></li>
@@ -45,14 +60,12 @@
                             <li><a href="#">Реклама</a></li>
                             <li><a href="#">Регистрация</a></li>
                         </ul>
-                        <button class="nav__cross"><img  src="icons/svg/cross.svg" alt="cross"></button>
-
+                        <!-- <button class="nav__cross"><img  src="icons/svg/cross.svg" alt="cross"></button> -->
+                        
                         <a href="#" class="header__wrapper-account">
                             <div class="header__name">@aleks7305 <img src="icons/svg/avatar.svg" alt="avatar" class="header__account"></div>
                         </a>
                     </nav>
-
-                    
                 </div>
             </div>
         </div>
