@@ -1,6 +1,7 @@
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
     body{
+        //Навигационное меню
         .header{
             &__logo{
                 margin-right: 0;
@@ -9,6 +10,7 @@
                 margin-left: 0;
             }
         }
+        //-------------------
     }
 }
 @media (max-width: 1080px) {
@@ -16,7 +18,8 @@
         position: relative;
         min-width: 100px;
         min-height: 100px;
-        
+
+        //Навигационное меню
         .header {
             height: 100%;
             width: 100%;
@@ -111,6 +114,15 @@
                 cursor: pointer;
                 background: transparent;
             }
+
+            &__sub-list{
+                top: 38px;
+                border: 1px solid black;
+                border-radius: 2%;
+                width: 342px;
+                height: 205px;
+                padding-left: 20px;
+            }
         }
 
         section.main{
@@ -118,10 +130,18 @@
         }
         .header__wrapper-burger_active{
             display: block;
-            // position: absolute;
-            // top: 50px;
-            // opacity: 100;
+            z-index: 999;
         }
+        //-------------------
+
+        //Slider
+        .slider {
+            // .slider__img
+            &__img {
+                height: 250px;
+            }
+        }
+        //-------------------
     }
 }
 
@@ -131,6 +151,15 @@
         .container{
             width: 500px;
         }
+
+        //Slider
+        .slider {
+            // .slider__img
+            &__img {
+                height: 150px;
+            }
+        }
+        //-------------------
     }
 }
 
@@ -141,6 +170,7 @@
             overflow: hidden;
         }
 
+        //Навигационное меню
         .header{
             width: 100%;
 
@@ -158,6 +188,26 @@
             &__hr{
                 width: 280px;
             }
+            &__sub-list{
+                width: 265px;
+                padding-left: 20px;
+            }
         }
+        //-------------------
+
+        //Slider
+        .slider {
+            // .slider__btn-left
+            &__btn-left {
+                left: 0;
+                margin-left: 0;
+            }
+
+            // .slider__btn-right
+            &__btn-right {
+                right: 0;
+            }
+        }
+        //-------------------
     }
 }

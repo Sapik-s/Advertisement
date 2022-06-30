@@ -12,4 +12,19 @@ window.addEventListener('DOMContentLoaded', function() {
         } 
         console.dir(burgerHidden);
     });
+	
+	$('.slider__items').slick({
+		// Бесконечно будет крутиться или нет
+		infinite: true,
+		// Скорость
+		speed: 1000,
+		// То сколько слайдов будет показываться
+		slidesToShow: 1,
+		// То, сколько слайдов будет прокручиваться
+		slidesToScroll: 1,
+		fade: false,
+  		cssEase: 'linear',
+        prevArrow: '<button class="slider__btn-left"><img src="img/slider/arrow-left.svg" alt="arrow-left" class="slider__btn-img"></button>',
+		nextArrow: '<button class="slider__btn-right"><img src="img/slider/arrow-right.svg" alt="arrow-right" class="slider__btn-img"></button>'
+	});
 });
