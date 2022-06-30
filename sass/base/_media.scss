@@ -142,6 +142,43 @@
             }
         }
         //-------------------
+
+        .cards{
+            &__title{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .news{
+            &__title{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .tags{
+            &__title{
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .main{
+            &__wrapper-blocks{
+                flex-direction: column;
+            }
+            &__cards{
+                width: 100%;
+                max-width: 745px;
+                margin-right: 0;
+            }
+
+            &__news{
+                width: 800px;
+                margin-top: 50px;
+            }
+        }
     }
 }
 

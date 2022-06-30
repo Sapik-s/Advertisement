@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', function() {
 		// Бесконечно будет крутиться или нет
 		infinite: true,
 		// Скорость
-		speed: 1000,
+		speed: 10,
 		// То сколько слайдов будет показываться
 		slidesToShow: 1,
 		// То, сколько слайдов будет прокручиваться
