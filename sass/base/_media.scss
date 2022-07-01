@@ -13,7 +13,7 @@
         //-------------------
     }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1245px) {
     body{
         position: relative;
         min-width: 100px;
@@ -144,23 +144,23 @@
         //-------------------
 
         .cards{
-            &__title{
-                display: flex;
-                justify-content: center;
+            &__card{
+                max-width: 745px;
             }
         }
 
         .news{
-            &__title{
+            &__descr{
+                max-width: 600px;
+            }
+
+            &__img-news{
                 display: flex;
                 justify-content: center;
             }
-        }
 
-        .tags{
-            &__title{
-                display: flex;
-                justify-content: center;
+            &__img{
+                margin-left: 25px;
             }
         }
 
@@ -170,13 +170,23 @@
             }
             &__cards{
                 width: 100%;
-                max-width: 745px;
+                max-width: 800px;
                 margin-right: 0;
             }
 
             &__news{
+                width: 100%;
                 width: 800px;
                 margin-top: 50px;
+            }
+
+            &__tags{
+                display: block;
+                margin: 0 auto;
+                margin-top: 35px;
+                min-height: 170px;
+                width: 100%;
+                max-width: 800px;
             }
         }
     }
@@ -197,6 +207,67 @@
             }
         }
         //-------------------
+
+        .cards{
+            &__card{
+                display: flex;
+                flex-direction: column;
+                min-height: 310px;
+                
+            }
+
+            &__items-bottom{
+                margin-top: 15px;
+            }
+
+            &__img{
+                margin-top: 5px;
+            }
+
+            &__text-top{
+                padding-top: 10px;
+                max-width: 430px;
+            }
+
+            &__descr{
+                max-width: 430px;
+            }
+
+            &__card{
+                max-width: 450px;
+            }
+
+            &__wrapper-right{
+                max-width: 430px;
+            }
+        }
+
+        .main{
+            &__cards{
+                max-width: 500px;
+            }
+            &__news{
+                width: 503px;
+            }
+        }
+
+        .news{
+            &__descr{
+                max-width: 320px;
+            }
+        }
+
+        .tags{
+            &__btn{
+                button{
+                    margin: 3.4px 1.5px;
+                }
+            }
+            &__wrapper-btn{
+                margin-left: 20px;
+            }
+        }
+
     }
 }
 
