@@ -213,7 +213,7 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 310px;
-                
+                padding-bottom: 20px;
             }
 
             &__items-bottom{
@@ -221,6 +221,9 @@
             }
 
             &__img{
+                height: 294px;
+                width: 100%;
+                min-height: 100%;
                 margin-top: 5px;
             }
 
@@ -243,6 +246,10 @@
 
             &__wrapper-hearts{
                 margin-top: 10px;
+            }
+
+            &__wrapper-left{
+                overflow: hidden;
             }
         }
 
@@ -349,6 +356,10 @@
                 max-width: 260px;
                 margin-left: 12px;
             }
+
+            &__img{
+                height: 174px;
+            }
         }
 
         .main{
@@ -372,6 +383,30 @@
         .tags{
             &__title{
                 font-size: 29px;
+            }
+        }
+
+        .top{
+            &__descr{
+                font-size: 11px;
+                line-height: 12px;
+            }
+        }
+
+        .public{
+            &__info{
+                flex-direction: column;
+            }
+        }
+
+        .right-info{
+            margin-top: 5px;
+        }
+
+        .descr{
+            &__text{
+                font-size: 11px;
+                line-height: 17px;
             }
         }
     }
@@ -443,6 +478,41 @@
 
             &__tags{
                 padding-bottom: 20px;   
+            }
+        }
+
+        .info{
+            &__left{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &__text{
+                padding-top: 15px;
+            }
+        }
+
+        .public{
+            &__info{
+                align-items: flex-start;
+            }
+        }
+
+        .left-info{
+            &__text{
+                margin-top: 5px;
+            }
+        }
+
+        .right-info{
+            // margin-top: 0;
+        }
+
+        .footer-content{
+            &__tag{
+                font-size: 13px;
+                span{
+                    font-size: 12px;
+                }
             }
         }
     }
