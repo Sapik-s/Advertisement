@@ -175,9 +175,7 @@
             }
 
             &__news{
-                width: 100%;
-                width: 800px;
-                margin-top: 50px;
+                display: none;
             }
 
             &__tags{
@@ -187,6 +185,7 @@
                 min-height: 170px;
                 width: 100%;
                 max-width: 800px;
+                display: none;
             }
         }
     }
