@@ -240,6 +240,10 @@
             &__wrapper-right{
                 max-width: 430px;
             }
+
+            &__wrapper-hearts{
+                margin-top: 10px;
+            }
         }
 
         .main{
@@ -274,7 +278,7 @@
 @media (max-width: 600px){
     body{
         .container{
-            width: 280px;
+            width: 380px;
             overflow: hidden;
         }
 
@@ -283,7 +287,6 @@
             width: 100%;
 
             &__wrapper{
-                margin: 0 auto;
                 max-width: 320px;
             }
             &__wrapper-burger{
@@ -317,5 +320,130 @@
             }
         }
         //-------------------
+
+        .cards{
+            &__title{
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                font-size: 29px;
+            }
+
+            &__card{
+                max-width: 330px;
+                min-height: 360px;
+            }
+
+            &__items-bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 40px;
+                &__wrapper-right{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+            &__wrapper-right{
+                max-width: 260px;
+                margin-left: 12px;
+            }
+        }
+
+        .main{
+            &__cards{
+                max-width: 380px;
+            }
+            &__news{
+                max-width: 380px;
+            }
+        }
+
+        .news{
+            &__descr{
+                max-width: 200px;
+            }
+            &__title{
+                font-size: 29px;
+            }
+        }
+
+        .tags{
+            &__title{
+                font-size: 29px;
+            }
+        }
+    }
+}
+@media (max-width: 430px){
+    body{
+        .container{
+            width: 280px;
+        }
+
+        .cards{
+            &__title{
+                font-size: 22px;
+            }
+            &__card{
+                max-width: 235px;
+                min-height: 350px;
+            }
+            &__img{
+                width: 220px;
+                height: 150px;
+            }
+            &__text-top{
+                font-size: 14px;
+                line-height: 16px;
+            }
+            &__descr{
+                font-size: 11px;
+                line-height: 12px;
+            }
+            &__wrapper-right{
+                margin-left: 0;
+                max-width: 200px;
+            }
+            &__items-bottom{
+                margin-left: 0;
+            }
+        }
+        .news{
+            &__title{
+                font-size: 22px;
+                margin-top: 0;
+            }
+
+            &__descr{
+                max-width: 110px;
+            }
+        }
+        .tags{
+            &__title{
+                font-size: 22px;
+            }
+            &__wrapper-btn{
+                margin-left: 10px;
+            }
+        }
+
+        .item-right{
+            &__estimation{
+                margin-top: 8px;
+            }
+        }
+
+        .main{
+            &__news{
+                max-width: 280px;
+                padding-top: 18px;
+            }
+
+            &__tags{
+                padding-bottom: 20px;   
+            }
+        }
     }
 }
