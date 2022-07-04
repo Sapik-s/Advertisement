@@ -103,6 +103,7 @@
                     a{color: #5A5A5A;}
                     img{display: none;}
                     &:last-child{display: none;}
+                    min-width: 100%;
                 }
             }
 
@@ -122,6 +123,9 @@
                 width: 342px;
                 height: 205px;
                 padding-left: 20px;
+            }
+            &__item{
+                
             }
         }
 
@@ -174,10 +178,6 @@
                 margin-right: 0;
             }
 
-            &__news{
-                display: none;
-            }
-
             &__tags{
                 display: block;
                 margin: 0 auto;
@@ -185,8 +185,18 @@
                 min-height: 170px;
                 width: 100%;
                 max-width: 800px;
-                display: none;
             }
+
+            &__news{
+                margin-top: 35px;
+                width: 800px;
+            }
+        }
+        .tags-second{
+            display: none;
+        }
+        .news-second{
+            display: none;
         }
     }
 }
@@ -284,7 +294,8 @@
 @media (max-width: 600px){
     body{
         .container{
-            width: 380px;
+            width: 95%;
+            // max-width: 380px;
             overflow: hidden;
         }
 
@@ -336,15 +347,17 @@
             }
 
             &__card{
-                max-width: 330px;
-                min-height: 360px;
+                width: 98%;
+                // max-width: 358px;
+                min-height: 324px;
+                margin: 20px auto;
             }
 
             &__items-bottom{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-left: 40px;
+                margin-left: 0;
                 &__wrapper-right{
                     display: flex;
                     flex-direction: column;
@@ -352,21 +365,37 @@
             }
 
             &__wrapper-right{
-                max-width: 260px;
-                margin-left: 12px;
+                margin: 0;
+                margin-top: 35px;
+                width: 96%;
+            }
+
+            &__wrapper-left{
+                width: 100%;
+                max-width: 98%;
             }
 
             &__img{
+                width: 100%;
+                max-width: 850px;
+                max-height: 360px;
                 height: 174px;
             }
         }
 
         .main{
             &__cards{
-                max-width: 380px;
+                width: 98%;
+                // max-width: 380px;
+                box-shadow: none;
+                margin: 0 auto;
             }
             &__news{
                 max-width: 380px;
+                box-shadow: none;
+            }
+            &__tags{
+                box-shadow: none;
             }
         }
 
@@ -408,40 +437,18 @@
                 line-height: 17px;
             }
         }
+
+        .item-right{
+            margin-top: 7px;
+        }
     }
 }
 @media (max-width: 400px){
     body{
-        .container{
-            width: 320px;
-        }
 
         .cards{
             &__title{
                 font-size: 22px;
-            }
-            &__card{
-                max-width: 260px;
-                min-height: 350px;
-            }
-            &__img{
-                width: 220px;
-                height: 150px;
-            }
-            &__text-top{
-                font-size: 14px;
-                line-height: 16px;
-            }
-            &__descr{
-                font-size: 11px;
-                line-height: 12px;
-            }
-            &__wrapper-right{
-                margin-left: 0;
-                max-width: 200px;
-            }
-            &__items-bottom{
-                margin-left: 0;
             }
         }
         .news{
@@ -449,61 +456,11 @@
                 font-size: 22px;
                 margin-top: 0;
             }
-
-            &__descr{
-                max-width: 110px;
-            }
         }
-        .tags{
-            &__title{
-                font-size: 22px;
-            }
-            &__wrapper-btn{
-                margin-left: 10px;
-            }
-        }
-
-        .item-right{
-            &__estimation{
-                margin-top: 8px;
-            }
-        }
-
-        .main{
-            &__news{
-                max-width: 320px;
-                padding-top: 18px;
-            }
-
-            &__tags{
-                padding-bottom: 20px;   
-            }
-        }
-
-        .info{
-            &__left{
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            &__text{
-                padding-top: 15px;
-            }
-        }
-
         .public{
             &__info{
                 align-items: flex-start;
             }
-        }
-
-        .left-info{
-            &__text{
-                margin-top: 5px;
-            }
-        }
-
-        .right-info{
-            // margin-top: 0;
         }
 
         .footer-content{
@@ -522,22 +479,11 @@
 }
 @media (max-width: 350px){
     body{
-        .container{
-            width: 280px;
-        }
-
         .cards{
             &__title{
                 font-size: 22px;
             }
-            &__card{
-                max-width: 235px;
-                min-height: 350px;
-            }
-            &__img{
-                width: 220px;
-                height: 150px;
-            }
+            
             &__text-top{
                 font-size: 14px;
                 line-height: 16px;
@@ -545,13 +491,6 @@
             &__descr{
                 font-size: 11px;
                 line-height: 12px;
-            }
-            &__wrapper-right{
-                margin-left: 0;
-                max-width: 200px;
-            }
-            &__items-bottom{
-                margin-left: 0;
             }
         }
         .news{
@@ -576,17 +515,6 @@
         .item-right{
             &__estimation{
                 margin-top: 8px;
-            }
-        }
-
-        .main{
-            &__news{
-                max-width: 280px;
-                padding-top: 18px;
-            }
-
-            &__tags{
-                padding-bottom: 20px;   
             }
         }
     }

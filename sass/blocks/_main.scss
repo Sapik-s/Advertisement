@@ -54,6 +54,11 @@ a{
         display: flex;
         align-items: center;
         cursor: pointer;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #5A5A5A;
         img{
             padding-left: 9px;
         }
@@ -495,7 +500,7 @@ a{
 
     // .cards__items-bottom
     &__items-bottom {
-        margin-top: 61px;
+        margin-top: 60px;
         display: flex;
         justify-content: space-between;
         padding-right: 20px;
@@ -578,6 +583,7 @@ a{
     &__elements{
         display: flex;
         align-items: center;
+        // justify-content: center;
         margin-right: 7px;
     }
 
@@ -595,7 +601,7 @@ a{
 
     // .item-right__img
     &__img {
-        margin-right: 7px;
+        margin-right: 5.75px;
     }
 
     // .item-right__text
@@ -722,7 +728,7 @@ a{
             height: 24px;
             border: 1px solid #C0C0C0;
             border-radius: 5px;
-            padding: 4px 14px;
+            padding: 3px 14px;
             margin: 7.5px 2.5px;
             background-color: #FFFFFF;            
 
@@ -849,6 +855,15 @@ a{
         color: #000000;
         margin-top: 10px;
     }
+
+    &__name{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.02em;
+        color: #292929;
+    }
 }
 
 .descr {
@@ -916,7 +931,7 @@ a{
         span{
             margin-left: 2px;
             font-size: 10px;
-            line-height: 12px;
+            line-height: 15px;
         }
     }
 }

@@ -27,4 +27,18 @@ window.addEventListener('DOMContentLoaded', function() {
         prevArrow: '<button class="slider__btn-left"><img src="img/slider/arrow-left.svg" alt="arrow-left" class="slider__btn-img"></button>',
 		nextArrow: '<button class="slider__btn-right"><img src="img/slider/arrow-right.svg" alt="arrow-right" class="slider__btn-img"></button>'
 	});
+
+	// function hoverNav() {
+	// 	let list = document.querySelectorAll('.nav__list li a'),
+	// 	subList = document.querySelectorAll('.nav__sub-list'),
+	// 	style = subList.style.cssText = `display: none;`;
+
+	// 	if (subList == style) {
+	// 		console.log('1');
+	// 	} else {
+	// 		console.log('2');
+	// 	}
+	// }
+
+	// hoverNav();
 });
