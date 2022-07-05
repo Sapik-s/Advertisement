@@ -1,8 +1,9 @@
 //Общие стили
 body{
-    width: 100%;
-    height: 100%;
     background-color: #E7F6FF;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 button{
     border: none;
@@ -15,6 +16,7 @@ a{
     text-decoration: none;
     color: #000000;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -31,7 +33,7 @@ a{
     &__wrapper-all{
         padding: 12.85px 0px 0px 0px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -69,9 +71,7 @@ a{
         justify-content: space-between;
     }
 
-    &__logo{
-        margin-right: 60px;
-    }
+    
 }
 
 .nav {
@@ -750,6 +750,11 @@ a{
     background: #000000;
     padding: 20px 0;
     margin-top: 100px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 
     // .footer__text
     &__text {
@@ -1115,4 +1120,11 @@ a{
             margin-left: 44px;
         }
     }
+}
+
+#account-show{
+    display: none;
+}
+.wrapper-site{
+    flex: 1;
 }

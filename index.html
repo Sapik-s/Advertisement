@@ -22,10 +22,10 @@
                     <div class="nav__cross">
                         <div id="webapp_cover">
                             <div id="menu_button">
-                              <input type="checkbox" id="menu_checkbox">
-                              <label for="menu_checkbox" id="menu_label">
+                                <input type="checkbox" id="menu_checkbox">
+                                <label for="menu_checkbox" id="menu_label">
                                 <div id="menu_text_bar"></div>
-                              </label>
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -36,10 +36,10 @@
                 <div class="header__wrapper-burger">
                     <nav class="nav">
                         <ul class="nav__list">
-                            <li><a href="#">Главная</a></li>
+                            <li><a href="index.html">Главная</a></li>
                             <hr class="nav__hr">
 
-                            <li class="nav__item"><a href="#">Проекты <img src="icons/svg/arrow-down.svg" alt="arrow-down">
+                            <li class="nav__item"><a href="index.html">Проекты <img src="icons/svg/arrow-down.svg" alt="arrow-down">
                                 <ul class="nav__sub-list">
                                     <li id="nav__sub-item"><a href="#">МЛМ проекты</a></li>
                                     <li id="nav__sub-item"><a href="#">Инвестиции</a></li>
@@ -64,259 +64,265 @@
                         </ul>
                         <!-- <button class="nav__cross"><img  src="icons/svg/cross.svg" alt="cross"></button> -->
                         
-                        <a href="#" class="header__wrapper-account">
+                        <a id="account-show" href="#" class="header__wrapper-account">
                             <div class="header__name">@aleks7305 <img src="icons/svg/avatar.svg" alt="avatar" class="header__account"></div>
                         </a>
                     </nav>
                 </div>
+                <a id="account-hidden" href="#" class="header__wrapper-account">
+                    <div class="header__name">@aleks7305 <img src="icons/svg/avatar.svg" alt="avatar" class="header__account"></div>
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="main">
-        <div class="container">
-            <div class="main__slider slider">
-                <div class="slider__wrapper">
-                    <div class="slider__items">
-                        <div class="slider__content">
-                            <img src="img/slider/slider-2.jpg" alt="slider-img" class="slider__img">
+    
+    <div class="wrapper-site">
+        <section class="main">
+            <div class="container">
+                <div class="main__slider slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__content">
+                                <img src="img/slider/slider-2.jpg" alt="slider-img" class="slider__img">
+                            </div>
+                            <div class="slider__content">
+                                <img src="img/slider/slider-3.jpg" alt="slider-img" class="slider__img">
+                            </div>
+                            <div class="slider__content">
+                                <img src="img/slider/slider-4.jpg" alt="slider-img" class="slider__img">
+                            </div>
+                            <button class="slider__btn-left"><img src="img/slider/arrow-left.svg" alt="arrow-left" class="slider__btn-img"></button>
+                            <button class="slider__btn-right"><img src="img/slider/arrow-right.svg" alt="arrow-right" class="slider__btn-img"></button>
                         </div>
-                        <div class="slider__content">
-                            <img src="img/slider/slider-3.jpg" alt="slider-img" class="slider__img">
-                        </div>
-                        <div class="slider__content">
-                            <img src="img/slider/slider-4.jpg" alt="slider-img" class="slider__img">
-                        </div>
-                        <button class="slider__btn-left"><img src="img/slider/arrow-left.svg" alt="arrow-left" class="slider__btn-img"></button>
-                        <button class="slider__btn-right"><img src="img/slider/arrow-right.svg" alt="arrow-right" class="slider__btn-img"></button>
+                        
                     </div>
-                    
+                </div>
+    
+                <div class="main__wrapper-blocks">
+                    <div class="main__cards cards">
+                        <h1 class="cards__title">Новые предложения</h1>
+                        <hr class="cards__hr">
+    
+                        <div class="cards__card">
+                            <div class="cards__wrapper-left">
+                                <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
+                                <div class="cards__wrapper-hearts">
+                                    <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
+                                    <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
+                                </div>
+                            </div>
+                            <div class="cards__wrapper-right">
+                                <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
+                                <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
+                                <div class="cards__items-bottom items-bottom">
+                                    <div class="items-bottom__wrapper-left item-left">
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
+                                            <div class="item-left__text">12.02.2022</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
+                                            <div class="item-left__text">304</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
+                                            <div class="item-left__text">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom__wrapper-right item-right">
+                                        <div class="item-right__estimation">
+                                            <div class="item-right__elements">
+                                                <button><img src="img/cards/like.svg" alt="like" class="item-right__img"></button>
+                                                <button id="like-active"><img src="img/cards/like-active.svg" alt="like-active"  class="item-right__img"></button>
+                                                <div class="item-right__text">4</div>
+                                            </div>
+                                            <div class="item-right__elements">
+                                                <button><img src="img/cards/dislike.svg" alt="dislike" class="item-right__img"></button>
+                                                <button id="dislike-active"><img src="img/cards/dislike-active.svg" alt="dislike-active"  class="item-right__img"></button>
+                                                <div class="item-right__text">2</div>
+                                            </div>
+                                            <a href="#" class="item-right__continue">Читать далее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__card">
+                            <div class="cards__wrapper-left">
+                                <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
+                                <div class="cards__wrapper-hearts">
+                                    <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
+                                    <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
+                                </div>
+                            </div>
+                            <div class="cards__wrapper-right">
+                                <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
+                                <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
+                                <div class="cards__items-bottom items-bottom">
+                                    <div class="items-bottom__wrapper-left item-left">
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
+                                            <div class="item-left__text">12.02.2022</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
+                                            <div class="item-left__text">304</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
+                                            <div class="item-left__text">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom__wrapper-right item-right">
+                                        <div class="item-right__estimation">
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/like.svg" alt="like" class="item-right__img">
+                                                <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
+                                                <div class="item-right__text">4</div>
+                                            </div>
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
+                                                <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
+                                                <div class="item-right__text">2</div>
+                                            </div>
+                                            <a href="#" class="item-right__continue">Читать далее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__card">
+                            <div class="cards__wrapper-left">
+                                <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
+                                <div class="cards__wrapper-hearts">
+                                    <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
+                                    <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
+                                </div>
+                            </div>
+                            <div class="cards__wrapper-right">
+                                <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
+                                <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
+                                <div class="cards__items-bottom items-bottom">
+                                    <div class="items-bottom__wrapper-left item-left">
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
+                                            <div class="item-left__text">12.02.2022</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
+                                            <div class="item-left__text">304</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
+                                            <div class="item-left__text">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom__wrapper-right item-right">
+                                        <div class="item-right__estimation">
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/like.svg" alt="like" class="item-right__img">
+                                                <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
+                                                <div class="item-right__text">4</div>
+                                            </div>
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
+                                                <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
+                                                <div class="item-right__text">2</div>
+                                            </div>
+                                            <a href="#" class="item-right__continue">Читать далее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards__card">
+                            <div class="cards__wrapper-left">
+                                <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
+                                <div class="cards__wrapper-hearts">
+                                    <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
+                                    <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
+                                </div>
+                            </div>
+                            <div class="cards__wrapper-right">
+                                <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
+                                <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
+                                <div class="cards__items-bottom items-bottom">
+                                    <div class="items-bottom__wrapper-left item-left">
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
+                                            <div class="item-left__text">12.02.2022</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
+                                            <div class="item-left__text">304</div>
+                                        </div>
+                                        <div class="item-left__elements">
+                                            <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
+                                            <div class="item-left__text">4</div>
+                                        </div>
+                                    </div>
+                                    <div class="items-bottom__wrapper-right item-right">
+                                        <div class="item-right__estimation">
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/like.svg" alt="like" class="item-right__img">
+                                                <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
+                                                <div class="item-right__text">4</div>
+                                            </div>
+                                            <div class="item-right__elements">
+                                                <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
+                                                <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
+                                                <div class="item-right__text">2</div>
+                                            </div>
+                                            <a href="#" class="item-right__continue">Читать далее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                        <a href="#" class="cards__btn"><button>Загрузить еще</button></a>
+                        
+                    </div>
+                    <div class="main__block-right">
+                        <div class="main__news news">
+                            <h2 class="news__title">Новости</h2>
+                            <hr class="news__hr">
+    
+                            <div class="news__wrapper-block">
+                                <a href="#"><img src="img/cards/card-1.png" alt="card" class="news__img"></a>
+                                <a href="#" class="news__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
+                            </div>
+                            <div class="news__wrapper-block">
+                                <a href="#"><img src="img/cards/card-1.png" alt="card" class="news__img"></a>
+                                <a href="#" class="news__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia comLorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officiaLorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi! commodi!modi!</a>
+                            </div>
+                            <hr class="news__hr">
+    
+                            <a href="#" class="news__img-news"><img src="img/cards/news-small.png" alt="news"></a>
+    
+                        </div>
+                        <div class="main__tags tags">
+                            <h2 class="tags__title">Тэги</h2>
+                            <hr class="tags__hr">
+    
+                            <div class="tags__wrapper-btn">
+                                <a href="#" class="tags__btn"><button>YouTube</button></a>
+                                <a href="#" class="tags__btn"><button>Заработок</button></a>
+                                <a href="#" class="tags__btn"><button>Курсы по заработку</button></a>
+                                <a href="#" class="tags__btn"><button>МЛМ</button></a>
+                                <a href="#" class="tags__btn"><button>YouTube</button></a>
+                                <a href="#" class="tags__btn"><button>Курсы по заработку</button></a>
+                                <a href="#" class="tags__btn"><button>Заработок</button></a>
+                                <a href="#" class="tags__btn"><button>МЛМ</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="main__wrapper-blocks">
-                <div class="main__cards cards">
-                    <h1 class="cards__title">Новые предложения</h1>
-                    <hr class="cards__hr">
-
-                    <div class="cards__card">
-                        <div class="cards__wrapper-left">
-                            <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
-                            <div class="cards__wrapper-hearts">
-                                <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
-                                <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
-                            </div>
-                        </div>
-                        <div class="cards__wrapper-right">
-                            <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
-                            <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
-                            <div class="cards__items-bottom items-bottom">
-                                <div class="items-bottom__wrapper-left item-left">
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
-                                        <div class="item-left__text">12.02.2022</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
-                                        <div class="item-left__text">304</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
-                                        <div class="item-left__text">4</div>
-                                    </div>
-                                </div>
-                                <div class="items-bottom__wrapper-right item-right">
-                                    <div class="item-right__estimation">
-                                        <div class="item-right__elements">
-                                            <button><img src="img/cards/like.svg" alt="like" class="item-right__img"></button>
-                                            <button id="like-active"><img src="img/cards/like-active.svg" alt="like-active"  class="item-right__img"></button>
-                                            <div class="item-right__text">4</div>
-                                        </div>
-                                        <div class="item-right__elements">
-                                            <button><img src="img/cards/dislike.svg" alt="dislike" class="item-right__img"></button>
-                                            <button id="dislike-active"><img src="img/cards/dislike-active.svg" alt="dislike-active"  class="item-right__img"></button>
-                                            <div class="item-right__text">2</div>
-                                        </div>
-                                        <a href="#" class="item-right__continue">Читать далее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards__card">
-                        <div class="cards__wrapper-left">
-                            <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
-                            <div class="cards__wrapper-hearts">
-                                <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
-                                <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
-                            </div>
-                        </div>
-                        <div class="cards__wrapper-right">
-                            <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
-                            <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
-                            <div class="cards__items-bottom items-bottom">
-                                <div class="items-bottom__wrapper-left item-left">
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
-                                        <div class="item-left__text">12.02.2022</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
-                                        <div class="item-left__text">304</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
-                                        <div class="item-left__text">4</div>
-                                    </div>
-                                </div>
-                                <div class="items-bottom__wrapper-right item-right">
-                                    <div class="item-right__estimation">
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/like.svg" alt="like" class="item-right__img">
-                                            <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
-                                            <div class="item-right__text">4</div>
-                                        </div>
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
-                                            <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
-                                            <div class="item-right__text">2</div>
-                                        </div>
-                                        <a href="#" class="item-right__continue">Читать далее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards__card">
-                        <div class="cards__wrapper-left">
-                            <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
-                            <div class="cards__wrapper-hearts">
-                                <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
-                                <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
-                            </div>
-                        </div>
-                        <div class="cards__wrapper-right">
-                            <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
-                            <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
-                            <div class="cards__items-bottom items-bottom">
-                                <div class="items-bottom__wrapper-left item-left">
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
-                                        <div class="item-left__text">12.02.2022</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
-                                        <div class="item-left__text">304</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
-                                        <div class="item-left__text">4</div>
-                                    </div>
-                                </div>
-                                <div class="items-bottom__wrapper-right item-right">
-                                    <div class="item-right__estimation">
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/like.svg" alt="like" class="item-right__img">
-                                            <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
-                                            <div class="item-right__text">4</div>
-                                        </div>
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
-                                            <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
-                                            <div class="item-right__text">2</div>
-                                        </div>
-                                        <a href="#" class="item-right__continue">Читать далее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards__card">
-                        <div class="cards__wrapper-left">
-                            <a href="publications.html"><img src="img/cards/card-1.png" alt="card" class="cards__img"></a>
-                            <div class="cards__wrapper-hearts">
-                                <img src="img/cards/heart.svg" alt="heart" class="cards__heart">
-                                <img src="img/cards/heart-active.svg" alt="heart" class="cards__heart-active">
-                            </div>
-                        </div>
-                        <div class="cards__wrapper-right">
-                            <a href="publications.html" class="cards__text-top">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
-                            <div class="cards__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</div>
-                            <div class="cards__items-bottom items-bottom">
-                                <div class="items-bottom__wrapper-left item-left">
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/calendar.svg" alt="calendar" class="item-left__img">
-                                        <div class="item-left__text">12.02.2022</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/viewed.svg" alt="viewed" class="item-left__img">
-                                        <div class="item-left__text">304</div>
-                                    </div>
-                                    <div class="item-left__elements">
-                                        <img src="img/cards/sms.svg" alt="chat" class="item-left__img">
-                                        <div class="item-left__text">4</div>
-                                    </div>
-                                </div>
-                                <div class="items-bottom__wrapper-right item-right">
-                                    <div class="item-right__estimation">
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/like.svg" alt="like" class="item-right__img">
-                                            <!-- <img src="img/cards/like-active.svg" alt="like-active" class="item-right__img"> -->
-                                            <div class="item-right__text">4</div>
-                                        </div>
-                                        <div class="item-right__elements">
-                                            <img src="img/cards/dislike.svg" alt="dislike" class="item-right__img">
-                                            <!-- <img src="img/cards/dislike-active.svg" alt="dislike-active" class="item-right__img"> -->
-                                            <div class="item-right__text">2</div>
-                                        </div>
-                                        <a href="#" class="item-right__continue">Читать далее</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-                    <a href="#" class="cards__btn"><button>Загрузить еще</button></a>
-                    
-                </div>
-                <div class="main__block-right">
-                    <div class="main__news news">
-                        <h2 class="news__title">Новости</h2>
-                        <hr class="news__hr">
-
-                        <div class="news__wrapper-block">
-                            <a href="#"><img src="img/cards/card-1.png" alt="card" class="news__img"></a>
-                            <a href="#" class="news__descr">Новый матричный маркетинг, без аналогов, где каждый партнер получает прибыль!</a>
-                        </div>
-                        <div class="news__wrapper-block">
-                            <a href="#"><img src="img/cards/card-1.png" alt="card" class="news__img"></a>
-                            <a href="#" class="news__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia comLorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officiaLorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi!Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus aperiam numquam veritatis tenetur atque beatae, unde est quasi illo repellat hic quod, dolorem molestias! Possimus ullam quae officia commodi! commodi!modi!</a>
-                        </div>
-                        <hr class="news__hr">
-
-                        <a href="#" class="news__img-news"><img src="img/cards/news-small.png" alt="news"></a>
-
-                    </div>
-                    <div class="main__tags tags">
-                        <h2 class="tags__title">Тэги</h2>
-                        <hr class="tags__hr">
-
-                        <div class="tags__wrapper-btn">
-                            <a href="#" class="tags__btn"><button>YouTube</button></a>
-                            <a href="#" class="tags__btn"><button>Заработок</button></a>
-                            <a href="#" class="tags__btn"><button>Курсы по заработку</button></a>
-                            <a href="#" class="tags__btn"><button>МЛМ</button></a>
-                            <a href="#" class="tags__btn"><button>YouTube</button></a>
-                            <a href="#" class="tags__btn"><button>Курсы по заработку</button></a>
-                            <a href="#" class="tags__btn"><button>Заработок</button></a>
-                            <a href="#" class="tags__btn"><button>МЛМ</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     
     <footer class="footer">
         <div class="container">
